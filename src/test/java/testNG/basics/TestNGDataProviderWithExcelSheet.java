@@ -10,7 +10,7 @@ import tek.sqa.framework.utilities.ExcelReader;
 public class TestNGDataProviderWithExcelSheet {
 
 	@Test(dataProvider = "informationData")
-	public void testOne(String name, String email, String city, String state, Double zipcode) {
+	public void testOne(String name, String email, String city, String state, String zipcode) {
 		System.out.println(name + " This is name from excel sheet");
 		System.out.println(email + " This is email from excel sheet");
 		System.out.println(city + " This is city from excel sheet");
@@ -30,7 +30,8 @@ public class TestNGDataProviderWithExcelSheet {
 			object[i][1] = infoData.get(i).get("email");
 			object[i][2] = infoData.get(i).get("city");
 			object[i][3] = infoData.get(i).get("state");
-			object[i][4] = infoData.get(i).get("zipcode");
+			String temp = String.valueOf(infoData.get(i).get("zipcode"));
+			object[i][4] = temp.substring(0,temp.length()-2);
 		}
 		return object;
 	}
