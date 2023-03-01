@@ -19,7 +19,7 @@ import static tek.sqa.framework.utilities.FileUtilities.getFileInputSteam;
 public class ExcelReader {
 
     public static Sheet getExcelSheet(String filePath, int sheetIndex) throws IOException {
-        ExtentTestManager.getTest().info("Reading Excel Sheet in location " + filePath);
+       // ExtentTestManager.getTest().info("Reading Excel Sheet in location " + filePath);
         FileInputStream fileInputSteam = getFileInputSteam(filePath);
         Workbook workbook = new XSSFWorkbook(fileInputSteam);
         Sheet sheet = workbook.getSheetAt(sheetIndex);
@@ -37,6 +37,7 @@ public class ExcelReader {
                 for (int col = 0; col < firstRow.getLastCellNum(); col++) {
                     String key = firstRow.getCell(col).getStringCellValue();
                     Object value = getCellValue(getCell(sheet, row, col));
+                    //Object value = getCellValue(getCell(sheet, 6, 2)); c6
                     map.put(key, value);
                 }
                 list.add(map);
@@ -98,4 +99,5 @@ public class ExcelReader {
     }
 
 
+  //  getCell(getExcelSheet,6,2);
 }
