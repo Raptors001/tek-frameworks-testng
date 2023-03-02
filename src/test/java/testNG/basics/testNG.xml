@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="TestNG Basics">
-	<groups>
+	<!-- <groups>
 		<run>
 			<include name="SmokeTest"></include>
 		</run>
@@ -17,6 +17,13 @@
 		<parameter name="passwordValue" value="Tek@12345"></parameter>
 		<classes>
 			<class name="testNG.basics.TestNGParameters"></class>
+		</classes>
+	</test>-->
+	<test name="TestNG Parameters">
+		<parameter name="UserNameValue" value="phantom.test@gmail.com"></parameter>
+		<parameter name="passwordValue" value="Tek@12345"></parameter>
+		<classes>
+			<class name="testNG.basics.JDBCTest"></class>
 		</classes>
 	</test>
 </suite>

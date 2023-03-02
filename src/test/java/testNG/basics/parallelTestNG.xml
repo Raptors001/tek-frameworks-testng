@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Testing Concept">
+	<test name="Parallel Test" parallel="methods" thread-count = "4">
+		<classes>
+			<class name="testNG.basics.TestNGParallelTesting"></class>
+			<class name="testNG.basics.TestNGParallelExecutionConcept"></class>
+		</classes>
+	</test>
+</suite>
