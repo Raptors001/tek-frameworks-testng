@@ -46,7 +46,7 @@ public class BaseSetup {
         }
     }
 
-    private String getProperty(String propertyKey) {
+    public String getProperty(String propertyKey) {
         return loadProperty().getProperty(propertyKey);
     }
 
@@ -71,7 +71,7 @@ public class BaseSetup {
 
     public void quiteBrowser() {
         if (this.getDriver() != null)
-            this.getDriver().quit();
+            this.getDriver().close();
         ;
     }
 

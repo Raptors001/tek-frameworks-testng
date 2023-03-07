@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-06T20:58:42 EST" name="Default suite" finished-at="2023-03-06T20:59:01 EST" duration-ms="19258">
+    <groups>
+    </groups>
+    <test started-at="2023-03-06T20:58:42 EST" name="Default test" finished-at="2023-03-06T20:59:01 EST" duration-ms="19258">
+      <class name="tek.sqa.framework.tests.RetailPageTest">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:tek.sqa.framework.tests.RetailPageTest@793f29ff]" started-at="2023-03-06T20:58:43 EST" name="setUpTest" finished-at="2023-03-06T20:58:45 EST" duration-ms="1954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="initializeTest()[pri:0, instance:tek.sqa.framework.tests.RetailPageTest@793f29ff]" started-at="2023-03-06T20:58:45 EST" name="initializeTest" finished-at="2023-03-06T20:58:45 EST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTest -->
+        <test-method signature="RetailApplicationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tek.sqa.framework.tests.RetailPageTest@793f29ff]" started-at="2023-03-06T20:58:45 EST" name="RetailApplicationTest" data-provider="informationData" finished-at="2023-03-06T20:59:01 EST" duration-ms="16439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3698521477852360]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2024]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[145]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RetailApplicationTest -->
+        <test-method is-config="true" signature="closeTest(org.testng.ITestResult)[pri:0, instance:tek.sqa.framework.tests.RetailPageTest@793f29ff]" started-at="2023-03-06T20:59:01 EST" name="closeTest" finished-at="2023-03-06T20:59:01 EST" duration-ms="61" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RetailApplicationTest status=SUCCESS method=RetailPageTest.RetailApplicationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tek.sqa.framework.tests.RetailPageTest@793f29ff] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTest -->
+      </class> <!-- tek.sqa.framework.tests.RetailPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

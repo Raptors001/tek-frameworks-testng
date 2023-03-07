@@ -5,6 +5,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import tek.sqa.framework.base.BaseSetup;
 
@@ -42,4 +43,10 @@ public class CommonUtility extends BaseSetup {
         String screenShot = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BASE64);
         return screenShot;
     }
+    
+    public void selectValueByVisibleText(WebElement element, String value) {
+    	Select select = new Select(element);
+    	select.selectByVisibleText(value);
+    }
+    
 }

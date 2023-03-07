@@ -7,6 +7,7 @@ import org.apache.poi.ss.formula.eval.ExternalNameEval;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import tek.sqa.framework.utilities.CommonUtility;
 
@@ -31,7 +32,7 @@ public class BaseUITest extends CommonUtility {
             ExtentTestManager.getTest(result).fail("ITestResult.FAILURE, e vent afterMethod",
                     MediaEntityBuilder.createScreenCaptureFromBase64String(takeScreenShot()).build());
         }
-        super.quiteBrowser();
+      //  super.quiteBrowser();
     }
 
 //    /**
